@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <style>
+        .form_con{
+            width: auto;
+            height: auto;
+            background: antiquewhite;
+            padding: 25px;
+            margin: 50px;
+        }
+        .form_con label{
+
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+    <div class="form_con">
+         <h3>注册</h3>
+         <form action="" method="get">
+             <p  style="color: red"><!-- 输入-->
+                 <label >用户：</label><label> <input type="text" name="username" class="input_txt" placeholder="请输入姓名"/>  </label>
+             </p>
+              <p>
+                 <label >密码：</label><label> <input type="password" name="password" class="input_txt"/>  </label>
+             </p>
+             <p> <!-- 单选-->
+                 <label >性别：</label>
+                 <label>
+                     <input type="radio" name="gender" value="0" checked/>
+                 </label> 男
+                 <label>
+                     <input type="radio" name="gender" value="1"/>
+                 </label> 女
+             </p>
+
+              <p> <!-- 多选-->
+                 <label >爱好：</label>
+                  <label>
+                      <input type="checkbox" name="like" value="sing"/>
+                  </label> 唱歌
+                  <label>
+                      <input type="checkbox" name="like" value="run"/>
+                  </label> 跑步
+                  <label>
+                      <input type="checkbox" name="like" value="swimming"/>
+                  </label> 游泳
+             </p>
+
+             <p> <!-- 下拉框-->
+                 <label >籍贯：</label>
+                 <label>
+                     <select name="site" class="input_select">
+                         <option value="0">福建</option>
+                         <option value="1">北京</option>
+                         <option value="2">广东</option>
+                         <option value="3">上海</option>
+                     </select>
+                 </label>
+             </p>
+              <p><!--多文本-->
+                 <label >个人描述：</label> <label>
+                  <textarea class="input_txt2"></textarea>
+              </label>
+              </p>
+              <p><!--文件-->
+                 <label >照片：</label> <input type="file">
+             </p>
+             <p>
+                 <input type="submit" value="提交" class="user_sub">
+                  <input type="reset" value="重置">
+             </p>
+
+         </form>
+    </div>
+</body>
+</html>

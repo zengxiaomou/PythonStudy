@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1632315103154') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cart:before {
+  content: "\e63b";
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.icon-search:before {
+  content: "\e63c";
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+

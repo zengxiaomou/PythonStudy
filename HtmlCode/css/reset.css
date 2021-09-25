@@ -1,0 +1,9 @@
+#reset.css
+html, body, ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
