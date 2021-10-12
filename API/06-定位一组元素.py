@@ -1,8 +1,7 @@
 # _*_ conding utf-8 _*_
 __author__ = "zeng"
-__data__ = "2021/10/9 7:46"
-
-# @Filename : 05-显示等待.py
+__data__ = "2021/10/10 16:50"
+# @Filename : 06-定位一组元素.py
 
 
 from selenium import webdriver
@@ -14,9 +13,15 @@ import time
 driver = webdriver.Chrome()
 driver.get("http://www.baidu.com")
 
-# 显示等待
-element = WebDriverWait(driver, 5, 0.5).until(EC.visibility_of_element_located((By.ID, 'kw')))
-element.send_keys("selenium")
+driver.find_element_by_id("kw").send_keys("selenium")
+driver.find_element_by_id("su").click()
+
 time.sleep(2)
+texts = driver.find_elements_by_xpath("//div[@id='2']/h3/a")
+print(len(texts))
+time.sleep(2)
+
+for i in texts:
+    print(i.text)
 
 driver.quit()
