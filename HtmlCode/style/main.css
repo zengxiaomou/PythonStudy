@@ -1,0 +1,48 @@
+.pop_con form{
+    width:500px;
+    height:30px;
+    background: white;
+
+    position: fixed;
+    left: 50%;
+    top:50%;
+    margin-top: -151px;
+    margin-left:-251px;
+    z-index: 9999;
+}
+
+
+
+.pop_con h3{
+    margin: 10px;
+    background: lightskyblue;
+    height: 40px;
+    font-weight: bolder;
+}
+.pop_con .form_group{
+    width: 450px;
+    height: 24px;
+    margin: 40px auto 0;
+}
+.form_group label{
+    float :left;
+    width :100px;
+    height: 28px;
+    text-align: right;
+}
+.form_group .input_txt{
+    width: 240px;
+    height: 28px;
+}
+.form_group .input_btn{
+    width:460px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.ok{
+    color: green;
+}
+.error{
+    color: red;
+}

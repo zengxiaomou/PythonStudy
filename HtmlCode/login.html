@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/main.css" type="text/css">
+    <script type="text/javascript" src="style/login.js">
+
+    </script>
+</head>
+<body>
+    <div class="pop_con">
+        <form action="">
+            <h3>用户登录</h3>
+            <div class="form_group">
+                <label > 用户名：</label><input type="text" name="username" id="username" placeholder="请输入用户名" class="input_txt" onclick="check_code()" >
+                <span id="span_user">[6-10]</span>
+            </div>
+            <div class="form_group">
+                <label > 密码：</label><input type="password" name="password" placeholder="请输入密码" class="input_txt">
+                <span id="span_pw">[6-10]</span>
+            </div>
+            <div class="form_group">
+                <input type="submit" value="登录" class="input_btn">
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    check_code()
+</script>
+</html>
